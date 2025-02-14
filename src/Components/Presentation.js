@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/Presentation.css";
 
-function Presentation(props) {
+function Presentation() {
   return (
     <section id="presentation" className="main-b">
       <h2 className="text-light titre-section">Présentation</h2>

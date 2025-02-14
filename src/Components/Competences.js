@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/Competences.css";
 
-function Competences(props) {
+function Competences() {
   return (
     <section id="competences" className="main-b">
       <h2 className="text-light titre-section">Compétences</h2>

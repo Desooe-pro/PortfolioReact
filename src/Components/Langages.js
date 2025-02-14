@@ -8,7 +8,7 @@ import JS from "../img/Logo_JS.png";
 import PHP from "../img/Logo_php.png";
 import "../styles/Langages.css";
 
-function Langages(props) {
+function Langages() {
   return (
     <section id="langage" className="main-b">
       <h2 className="titre-section">Langages de programmation</h2>

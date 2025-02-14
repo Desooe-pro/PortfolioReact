@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/D-C.css";
 
-function DC(props) {
+function DC() {
   return (
     <section id="D-C">
       <div id="dip" className="main-b">

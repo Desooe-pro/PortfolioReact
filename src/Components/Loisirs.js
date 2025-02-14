@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/Loisirs.css";
 
-function Loisirs(props) {
+function Loisirs() {
   return (
     <section id="L-I" className="main-b">
       <h2 className="titre-section">Loisirs et Interêts</h2>

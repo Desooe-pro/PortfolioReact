@@ -2,7 +2,7 @@ import React from "react";
 import NavBar from "./NavBar";
 import "../styles/Header.css";
 
-function Header(props) {
+function Header() {
   return (
     <div id={"main-header"}>
       <NavBar />
