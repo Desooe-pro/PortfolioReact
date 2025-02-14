@@ -1,0 +1,9 @@
+#presentation {
+    display: flex;
+    justify-content: center;
+    scroll-margin-top: 140px;
+}
+
+#pres-text {
+    padding: 0 3rem 1rem;
+}

@@ -1,0 +1,86 @@
+#main-header {
+    display: flex;
+    position: sticky;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    top: 0;
+    z-index: 1;
+    border-radius: 70px;
+    margin: 0 auto;
+}
+
+.div-head {
+    padding: 0 10px;
+}
+
+.rond {
+    width: 70px;
+    min-width: 70px;
+    height: 70px;
+    margin-left: 8px;
+    border-radius: 50%;
+    background-color: #951ccd;
+}
+
+.rond:hover {
+    background-color: #521071;
+}
+
+#social {
+    display: flex;
+    flex-direction: column;
+    padding-right: 10px;
+    padding-inline-start: 0;
+}
+
+#social li {
+    line-height: 1.2;
+}
+
+#social a::before {
+    display: inline-block;
+    font-family: 'picto', sans-serif;
+    color: #951ccd;
+    font-size: 28px;
+    padding: 0 10px;
+}
+
+#social li:first-of-type a::before {
+    content: '\e800';
+}
+
+#social li:last-of-type a::before {
+    content: '\f0e0';
+}
+
+#social li:first-of-type a:hover::before {
+    color: #521071;
+}
+
+#social li:last-of-type a:hover::before {
+    color: #521071;
+}
+
+#social li:first-of-type a:visited::before {
+    color: #951ccd;
+}
+
+#social li:last-of-type a:visited::before {
+    color: #951ccd;
+}
+
+#header-div {
+    background-color: #191919;
+    padding: 20px;
+    border-radius: 60px;
+}
+
+.sr-only {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}

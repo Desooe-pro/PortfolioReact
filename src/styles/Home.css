@@ -1,0 +1,79 @@
+#main-content {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.slidePre {
+    display: none;
+    visibility: hidden;
+    margin: 5px auto;
+    opacity: 0;
+    transition: 0.6s;
+    transform: translateX(200px);
+}
+
+.slideSui {
+    display: none;
+    visibility: hidden;
+    margin: 5px auto;
+    opacity: 0;
+    transition: 0.6s;
+    transform: translateX(-200px);
+}
+
+.SlideLeft {
+    animation: 0.5s ease-in slideLeft;
+}
+
+.SlideRight {
+    animation: 0.5s ease-in slideRight;
+}
+
+@keyframes slideLeft {
+    from {
+        opacity: 0;
+        transition: 0.5s;
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideRight {
+    from {
+        opacity: 0;
+        transition: 0.5s;
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.slideShow {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.btn {
+    color: #000;
+    background: linear-gradient(150grad, #aaa, #444);
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.btnDown {
+    color: #555;
+    background: linear-gradient(150grad, #ddd, #777);
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+}

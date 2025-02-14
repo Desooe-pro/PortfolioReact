@@ -1,3 +1,54 @@
+@font-face {
+  font-family: 'picto';
+  src: url('../font/picto.eot?91607964');
+  src: url('../font/picto.eot?91607964#iefix') format('embedded-opentype'),
+  url('../font/picto.woff2?91607964') format('woff2'),
+  url('../font/picto.woff?91607964') format('woff'),
+  url('../font/picto.ttf?91607964') format('truetype'),
+  url('../font/picto.svg?91607964#picto') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "picto";
+  font-style: normal;
+  font-weight: normal;
+
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+
+  font-variant: normal;
+  text-transform: none;
+
+  line-height: 1em;
+
+  margin-left: .2em;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-phone:before { content: '\e800'; } /* '' */
+.icon-facebook:before { content: '\f09a'; } /* '' */
+.icon-mail:before { content: '\f0e0'; } /* '' */
+.icon-instagram:before { content: '\f16d'; } /* '' */
+
+@font-face {
+  font-family: 'quicksandregular';
+  src: url('../font/quicksand-regular-webfont.eot');
+  src: url('../font/quicksand-regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../font/quicksand-regular-webfont.woff2') format('woff2'),
+  url('../font/quicksand-regular-webfont.woff') format('woff'),
+  url('../font/quicksand-regular-webfont.ttf') format('truetype'),
+  url('../font/quicksand-regular-webfont.svg#quicksandregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .App {
   text-align: center;
 }
@@ -28,11 +79,62 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body {
+  font-family: "Times New Roman", serif;
+  background: linear-gradient(rgba(41,41,41), rgba(18,117,120), rgba(41,41,41)) no-repeat;
+  min-height: 100vh;
+}
+
+p, li {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+.main-b {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(#494949, #202020) no-repeat;
+  width: 90%;
+  border-radius: 20px;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #951ccd88;
+}
+
+.main-b-inv {
+  background: linear-gradient(#202020, #494949) no-repeat;
+}
+
+.titre-section {
+  font-size: 40px;
+  font-family: 'quicksandregular', sans-serif;
+  padding-top: 1rem;
+}
+
+.text-light {
+  color: #eee;
+}
+
+.text-start {
+  text-align: start;
+}
+
+/* ====== FONT ====== */
+.quick-s {
+  font-size: 60px;
+  font-family: quicksandregular, sans-serif;
+  line-height: 1;
+}
+.quick-s-2 {
+  font-size: 20px;
+  font-family: 'quicksandregular', sans-serif;
+  line-height: 1;
+}
+.quick-s-3 {
+  font-size: 18px;
+  line-height: 1;
 }

@@ -1,0 +1,32 @@
+#D-C {
+    display: flex;
+    flex-direction: row;
+    scroll-margin-top: 130px;
+}
+
+#D-C h2 {
+    padding-top: 1rem;
+}
+
+#dip {
+    width: 30%;
+    color: #ffffff;
+}
+
+#dip p {
+    padding: 0 2rem;
+}
+
+#dip li {
+    list-style: inside;
+    padding: 0 1rem;
+}
+
+#cert {
+    width: 30%;
+    color: #ffffff;
+}
+
+#cert p {
+    padding: 0 2rem;
+}

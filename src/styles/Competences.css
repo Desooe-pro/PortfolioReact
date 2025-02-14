@@ -1,0 +1,27 @@
+#competences {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    scroll-margin-top: 140px;
+}
+
+#competences li {
+    list-style: inside;
+}
+
+.comp {
+    display: flex;
+    flex-direction: row;
+}
+
+#soft {
+    width: 40%;
+    color: #ffffff;
+    padding: 15px;
+}
+
+#hard {
+    width: 40%;
+    color: #ffffff;
+    padding: 15px;
+}

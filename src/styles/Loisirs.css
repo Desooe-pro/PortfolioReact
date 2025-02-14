@@ -1,0 +1,8 @@
+#L-I {
+    color: #ffffff;
+    scroll-margin-top: 140px;
+}
+
+#L-I li {
+    list-style:inside ;
+}

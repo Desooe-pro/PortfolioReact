@@ -1,0 +1,27 @@
+#intro {
+    display: flex;
+    justify-content: center;
+    scroll-margin-top: 170px;
+    margin: 0 auto;
+}
+
+#CV {
+    display: flex;
+    justify-content: center;
+    background-color: #7517a1;
+    width: 20%;
+    text-align: center;
+    font-size: 15px;
+    margin: 10px auto;
+    border-radius: 50px;
+}
+
+#CV:hover {
+    background-color: #521071;
+    color: #ffffff;
+}
+
+#CV a {
+    color: #ffffff;
+    text-decoration: none;
+}

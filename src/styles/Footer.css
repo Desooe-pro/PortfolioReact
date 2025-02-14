@@ -1,0 +1,32 @@
+#main-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    padding-bottom: 0;
+    margin: 0 auto;
+    margin-bottom: 0;
+}
+
+#main-footer a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.foot-b {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(#494949, #202020) no-repeat;
+    width: 40%;
+    border-radius: 20px 20px 0 0;
+    margin: 20px auto;
+    margin-bottom: 0;
+    text-align: center;
+    border: 2px solid rgba(183, 33, 252, 0.5);
+}
+
+.foot-b p {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
