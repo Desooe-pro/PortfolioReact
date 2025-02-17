@@ -11,17 +11,22 @@
 
 .comp {
     display: flex;
-    flex-direction: row;
 }
 
 #soft {
-    width: 40%;
+    min-width: 40%;
     color: #ffffff;
     padding: 15px;
 }
 
 #hard {
-    width: 40%;
+    min-width: 40%;
     color: #ffffff;
     padding: 15px;
+}
+
+@media screen and (min-width: 768px) {
+    #soft, #hard {
+        width: 40%;
+    }
 }

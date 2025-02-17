@@ -24,7 +24,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 90%;
+    min-width: 90%;
     border-radius: 20px;
     margin: 20px auto;
     text-align: center;
@@ -33,7 +33,6 @@
 .video-projets2 {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
@@ -148,4 +147,10 @@
     visibility: visible;
     opacity: 1;
     transform: translateX(0);
+}
+
+@media screen and (min-width: 1400px) {
+    .video-projets2 {
+        flex-direction: row;
+    }
 }

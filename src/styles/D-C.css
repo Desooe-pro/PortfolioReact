@@ -1,6 +1,5 @@
 #D-C {
     display: flex;
-    flex-direction: row;
     scroll-margin-top: 130px;
 }
 
@@ -9,7 +8,7 @@
 }
 
 #dip {
-    width: 30%;
+    min-width: 30%;
     color: #ffffff;
 }
 
@@ -23,10 +22,16 @@
 }
 
 #cert {
-    width: 30%;
+    min-width: 30%;
     color: #ffffff;
 }
 
 #cert p {
     padding: 0 2rem;
+}
+
+@media screen and (min-width: 768px) {
+    #dip, #cert {
+        width: 30%;
+    }
 }

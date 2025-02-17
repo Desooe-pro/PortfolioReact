@@ -6,3 +6,9 @@
 #L-I li {
     list-style:inside ;
 }
+
+@media screen and (min-width: 768px) {
+    #L-I .projet-nom-b {
+        width: 40%;
+    }
+}
