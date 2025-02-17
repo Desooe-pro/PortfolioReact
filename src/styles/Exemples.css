@@ -13,7 +13,7 @@
 }
 
 .projet-nom-b {
-    width: 40%;
+    width: 90%;
 }
 
 .projet-nom li {
@@ -32,7 +32,9 @@
 
 .video-projets2 {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
 }
 
@@ -41,7 +43,7 @@
     justify-content: center;
     background-color: #7517a1;
     width: 40%;
-    min-width: 150px;
+    min-width: 200px;
     text-align: center;
     font-size: 15px;
     margin: 10px 5px;
@@ -68,4 +70,82 @@
     text-align: center;
     font-size: 11px;
     margin: 0 auto;
+}
+
+.slidePreProj {
+    margin: 5px auto;
+    animation: 0.5s ease-in slideOutLeft;
+    position: absolute;
+    transform: translateX(-10000px);
+}
+.slideSuiProj {
+    margin: 5px auto;
+    animation: 0.5s ease-in slideOutRightProj;
+    position: absolute;
+    right: 4%;
+    bottom: 4%;
+    transform: translateY(-10000px);
+}
+
+
+.slideOutLeft {
+    animation: 0.5s ease-in slideOutLeft;
+}
+
+.SlideLeftProj {
+    animation: 0.5s ease-in slideLeftProj;
+}
+
+.SlideRightProj {
+    animation: 0.5s ease-in slideRightProj;
+}
+
+@keyframes slideLeftProj {
+    from {
+        opacity: 0;
+        transition: 0.5s;
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideRightProj {
+    from {
+        opacity: 0;
+        transition: 0.5s;
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideOutLeft {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        opacity: 0;
+        transition: 0.5s;
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes slideOutRightProj {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transition: 0.5s;
+        transform: translateY(100%);
+    }
+}
+
+.slideShowProj {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
 }

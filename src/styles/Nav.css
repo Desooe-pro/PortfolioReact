@@ -20,6 +20,7 @@
 
 .logo {
     display: flex;
+    position: sticky;
     justify-content: center;
     align-items: center;
     width: 72px;

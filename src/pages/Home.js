@@ -12,18 +12,19 @@ function Home() {
   const [slide, setSlide] = useState(1);
   const [blocs, setblocs] = useState([
     { id: "1", side: "Right" },
-    { id: "2", side: "Right" },
-    { id: "3", side: "Right" },
-    { id: "4", side: "Right" },
-    { id: "5", side: "Right" },
-    { id: "6", side: "Right" },
-    { id: "7", side: "Right" },
+    { id: "2", side: "" },
+    { id: "3", side: "" },
+    { id: "4", side: "" },
+    { id: "5", side: "" },
+    { id: "6", side: "" },
+    { id: "7", side: "" },
   ]);
 
   function HandlePrecedent() {
     if (slide > 1) {
       setSlide(slide - 1);
       blocs[slide - 1].side = "Left";
+      blocs[slide - 1].side = "Right";
     }
   }
 
@@ -42,9 +43,11 @@ function Home() {
           className={
             slide === 1
               ? `slideShow Slide${blocs[0].side}`
-              : slide < 1
+              : slide < 1 && blocs[0].side !== ""
                 ? "slideSui"
-                : "slidePre"
+                : blocs[0].side !== ""
+                  ? "slidePre"
+                  : "slideNone"
           }
         >
           <Intro />
@@ -53,9 +56,11 @@ function Home() {
           className={
             slide === 2
               ? `slideShow Slide${blocs[1].side}`
-              : slide < 2
+              : slide < 2 && blocs[1].side !== ""
                 ? "slideSui"
-                : "slidePre"
+                : blocs[1].side !== ""
+                  ? "slidePre"
+                  : "slideNone"
           }
         >
           <Presentation />
@@ -64,9 +69,11 @@ function Home() {
           className={
             slide === 3
               ? `slideShow Slide${blocs[2].side}`
-              : slide < 3
+              : slide < 3 && blocs[2].side !== ""
                 ? "slideSui"
-                : "slidePre"
+                : blocs[2].side !== ""
+                  ? "slidePre"
+                  : "slideNone"
           }
         >
           <DC />
@@ -75,9 +82,11 @@ function Home() {
           className={
             slide === 4
               ? `slideShow Slide${blocs[3].side}`
-              : slide < 4
+              : slide < 4 && blocs[3].side !== ""
                 ? "slideSui"
-                : "slidePre"
+                : blocs[3].side !== ""
+                  ? "slidePre"
+                  : "slideNone"
           }
         >
           <Competences />
@@ -86,9 +95,11 @@ function Home() {
           className={
             slide === 5
               ? `slideShow Slide${blocs[4].side}`
-              : slide < 5
+              : slide < 5 && blocs[4].side !== ""
                 ? "slideSui"
-                : "slidePre"
+                : blocs[4].side !== ""
+                  ? "slidePre"
+                  : "slideNone"
           }
         >
           <Langages />
@@ -97,9 +108,11 @@ function Home() {
           className={
             slide === 6
               ? `slideShow Slide${blocs[5].side}`
-              : slide < 6
+              : slide < 6 && blocs[5].side !== ""
                 ? "slideSui"
-                : "slidePre"
+                : blocs[5].side !== ""
+                  ? "slidePre"
+                  : "slideNone"
           }
         >
           <ExemplesDeProjets />
@@ -108,9 +121,11 @@ function Home() {
           className={
             slide === 7
               ? `slideShow Slide${blocs[6].side}`
-              : slide < 7
+              : slide < 7 && blocs[6].side !== ""
                 ? "slideSui"
-                : "slidePre"
+                : blocs[6].side !== ""
+                  ? "slidePre"
+                  : "slideNone"
           }
         >
           <Loisirs />
