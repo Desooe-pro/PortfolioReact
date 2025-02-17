@@ -6,7 +6,7 @@ function Footer(props) {
     <footer id="main-footer">
       <div className="foot-b">
         <p className="text-light">
-          <a href="mentions_legales.html">Mentions légales</a>
+          <a href="/mentions_legales">Mentions légales</a>
         </p>
       </div>
     </footer>
